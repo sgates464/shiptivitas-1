@@ -1,0 +1,11 @@
+Since I don't work with class components this task was a struggle at first.
+
+I found it difficult to efficiently access the values necessary to program state changes, I resolved to adding an id attribute to the Swimlane containers the dragula api was working on.
+This made it much easier to associate each collumn in the code.
+
+after that I struggled to find a way to update state properly. I tried to decrease the state object depth by one level with no success, then reverted back.
+I found that taking the state object and converiting it to a list was very helpful, I just had to remember to update the state the same way the state was initialized.
+
+
+In the future it may be beneficial to refactor components into functional components and create custom hooks, this would seperate some concerns and work more efficiently should 
+client data be fetched from a server/database instead of hard coded. Dragula also has methods to removed elements which could be of use in the future.
